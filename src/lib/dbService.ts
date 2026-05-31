@@ -119,14 +119,15 @@ export const dbService = {
 
   async createTemplate(data: Omit<TemplateItem, 'id' | 'salesCount' | 'rating'>): Promise<any> {
     try {
+      const { includedFiles, documentationInfo, productFaq, badge, ...prismaData } = data as any;
       return await prisma.template.create({
         data: {
-          ...data,
+          ...prismaData,
           salesCount: 0,
-          screenshots: JSON.stringify(data.screenshots),
-          features: JSON.stringify(data.features),
-          techStack: JSON.stringify(data.techStack),
-          changelog: JSON.stringify(data.changelog)
+          screenshots: JSON.stringify(prismaData.screenshots),
+          features: JSON.stringify(prismaData.features),
+          techStack: JSON.stringify(prismaData.techStack),
+          changelog: JSON.stringify(prismaData.changelog)
         }
       });
     } catch (e) {
@@ -144,12 +145,13 @@ export const dbService = {
 
   async updateTemplate(id: string, data: Partial<TemplateItem>): Promise<any> {
     try {
+      const { includedFiles, documentationInfo, productFaq, badge, ...prismaData } = data as any;
       // Handle serialized JSON arrays for Prisma if database supports it
-      const updateData: any = { ...data };
-      if (data.screenshots) updateData.screenshots = JSON.stringify(data.screenshots);
-      if (data.features) updateData.features = JSON.stringify(data.features);
-      if (data.techStack) updateData.techStack = JSON.stringify(data.techStack);
-      if (data.changelog) updateData.changelog = JSON.stringify(data.changelog);
+      const updateData: any = { ...prismaData };
+      if (prismaData.screenshots) updateData.screenshots = JSON.stringify(prismaData.screenshots);
+      if (prismaData.features) updateData.features = JSON.stringify(prismaData.features);
+      if (prismaData.techStack) updateData.techStack = JSON.stringify(prismaData.techStack);
+      if (prismaData.changelog) updateData.changelog = JSON.stringify(prismaData.changelog);
 
       return await prisma.template.update({
         where: { id },

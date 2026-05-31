@@ -1,8 +1,8 @@
 // src/components/TemplateCheckoutCard.tsx
 'use client';
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { CreditCard, Download, ShieldCheck, ExternalLink, Sparkles, CheckCircle2, Loader2, Key } from 'lucide-react';
@@ -17,6 +17,7 @@ export default function TemplateCheckoutCard({ template, initialPurchased }: Tem
   const { user } = useAuth();
   const { dict } = useLanguage();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [purchased, setPurchased] = useState(initialPurchased);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -24,17 +25,28 @@ export default function TemplateCheckoutCard({ template, initialPurchased }: Tem
   const [licenseKey, setLicenseKey] = useState('');
   const [checkoutError, setCheckoutError] = useState('');
 
-  const hasApk = template.techStack.includes('CapacitorJS') || template.category.includes('APK') || template.title.toLowerCase().includes('apk');
+  const hasApk = template.techStack.includes('CapacitorJS') || template.category.includes('APK') || template.title.toLowerCase().includes('apk') || template.techStack.includes('Flutter');
 
   const handleBuyClick = () => {
     if (!user) {
-      router.push(`/login?redirect=/templates/${template.slug}`);
+      router.push(`/login?redirect=/product/${template.slug}`);
       return;
     }
     setCheckoutStep('details');
     setCheckoutError('');
     setIsCheckoutOpen(true);
   };
+
+  useEffect(() => {
+    const triggerCheckout = searchParams.get('checkout');
+    if (triggerCheckout === 'true' && !purchased) {
+      handleBuyClick();
+      // Clean query parameter from address bar
+      const url = new URL(window.location.href);
+      url.searchParams.delete('checkout');
+      window.history.replaceState({}, '', url.pathname + url.search);
+    }
+  }, [searchParams, purchased, user]);
 
   const handleSimulatePayment = async () => {
     setCheckoutStep('processing');

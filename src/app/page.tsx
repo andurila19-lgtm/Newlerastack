@@ -3,7 +3,21 @@ import React from 'react';
 import Link from 'next/link';
 import { dbService } from '@/lib/dbService';
 import TemplateExplorer from '@/components/TemplateExplorer';
-import { Sparkles, ArrowRight, ShieldCheck, Zap, Download, RefreshCw, Star } from 'lucide-react';
+import { 
+  Sparkles, 
+  ArrowRight, 
+  ShieldCheck, 
+  Zap, 
+  Download, 
+  RefreshCw, 
+  Star, 
+  Cpu, 
+  Smartphone, 
+  Code2, 
+  TrendingUp, 
+  BookOpen, 
+  Layers 
+} from 'lucide-react';
 import TemplateCard from '@/components/TemplateCard';
 import { getDictionary } from '@/lib/dictionaries';
 import { cookies } from 'next/headers';
@@ -24,7 +38,8 @@ export default async function Home() {
     { q: dict.faq.q2, a: dict.faq.a2 },
     { q: dict.faq.q3, a: dict.faq.a3 },
     { q: dict.faq.q4, a: dict.faq.a4 },
-    { q: dict.faq.q5, a: dict.faq.a5 }
+    { q: dict.faq.q5, a: dict.faq.a5 },
+    { q: dict.faq.q6, a: dict.faq.a6 }
   ];
 
   // Testimonials
@@ -49,11 +64,50 @@ export default async function Home() {
     }
   ];
 
+  // Trust items with corresponding icons
+  const trustItems = [
+    {
+      icon: Cpu,
+      title: dict.trust.items.ready_title,
+      desc: dict.trust.items.ready_desc,
+    },
+    {
+      icon: Smartphone,
+      title: dict.trust.items.responsive_title,
+      desc: dict.trust.items.responsive_desc,
+    },
+    {
+      icon: Code2,
+      title: dict.trust.items.clean_title,
+      desc: dict.trust.items.clean_desc,
+    },
+    {
+      icon: TrendingUp,
+      title: dict.trust.items.seo_title,
+      desc: dict.trust.items.seo_desc,
+    },
+    {
+      icon: BookOpen,
+      title: dict.trust.items.docs_title,
+      desc: dict.trust.items.docs_desc,
+    },
+    {
+      icon: RefreshCw,
+      title: dict.trust.items.updates_title,
+      desc: dict.trust.items.updates_desc,
+    },
+    {
+      icon: Layers,
+      title: dict.trust.items.uiux_title,
+      desc: dict.trust.items.uiux_desc,
+    }
+  ];
+
   return (
     <div className="w-full relative">
       
       {/* 1. Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-grid-cyber">
         {/* Glow gradients behind Hero */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[130px] pointer-events-none" />
         <div className="absolute top-1/3 left-1/3 h-96 w-96 rounded-full bg-cyan-500/5 blur-[120px] pointer-events-none" />
@@ -74,36 +128,36 @@ export default async function Home() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#templates"
-              className="rounded-lg bg-gradient-emerald px-6 py-3 text-sm font-bold text-slate-950 hover:bg-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] transition-all flex items-center gap-2 group font-semibold"
+              className="rounded-lg bg-gradient-emerald px-6 py-3.5 text-sm font-bold text-slate-950 hover:bg-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] transition-all flex items-center gap-2 group font-semibold"
             >
               {dict.hero.exploreBtn}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
-              href="#pricing"
-              className="rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-850"
+              href="#templates"
+              className="rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-slate-850"
             >
               {dict.hero.pricingBtn}
             </Link>
           </div>
 
-          {/* Quick core features badges */}
-          <div className="mt-16 pt-8 border-t border-slate-900 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-2 text-slate-400 text-xs">
-              <ShieldCheck className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-              <span>{dict.hero.feature1}</span>
+          {/* Statistics Grid */}
+          <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <div className="glass-panel rounded-xl p-5 border border-slate-800/80 hover:border-emerald-500/25 transition-all">
+              <span className="block text-2xl md:text-3xl font-black text-white">{dict.hero.stats.templatesCount}</span>
+              <span className="text-3xs md:text-2xs text-slate-500 font-semibold uppercase tracking-wider mt-1.5 block">{dict.hero.stats.templatesLabel}</span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-slate-400 text-xs">
-              <Zap className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-              <span>{dict.hero.feature2}</span>
+            <div className="glass-panel rounded-xl p-5 border border-slate-800/80 hover:border-emerald-500/25 transition-all">
+              <span className="block text-2xl md:text-3xl font-black text-gradient-emerald">{dict.hero.stats.downloadsCount}</span>
+              <span className="text-3xs md:text-2xs text-slate-500 font-semibold uppercase tracking-wider mt-1.5 block">{dict.hero.stats.downloadsLabel}</span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-slate-400 text-xs">
-              <Download className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-              <span>{dict.hero.feature3}</span>
+            <div className="glass-panel rounded-xl p-5 border border-slate-800/80 hover:border-emerald-500/25 transition-all">
+              <span className="block text-2xl md:text-3xl font-black text-white">{dict.hero.stats.clientsCount}</span>
+              <span className="text-3xs md:text-2xs text-slate-500 font-semibold uppercase tracking-wider mt-1.5 block">{dict.hero.stats.clientsLabel}</span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-slate-400 text-xs">
-              <RefreshCw className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-              <span>{dict.hero.feature4}</span>
+            <div className="glass-panel rounded-xl p-5 border border-slate-800/80 hover:border-emerald-500/25 transition-all">
+              <span className="block text-2xl md:text-3xl font-black text-white">{dict.hero.stats.techsCount}</span>
+              <span className="text-3xs md:text-2xs text-slate-500 font-semibold uppercase tracking-wider mt-1.5 block">{dict.hero.stats.techsLabel}</span>
             </div>
           </div>
         </div>
@@ -135,7 +189,40 @@ export default async function Home() {
       {/* 3. Main Templates Catalog Section (Interactive) */}
       <TemplateExplorer initialTemplates={templates} />
 
-      {/* 4. Pricing Section */}
+      {/* 4. Trust Section */}
+      <section className="py-20 border-t border-slate-900 bg-slate-950/20 relative">
+        <div className="absolute top-1/2 left-1/4 h-80 w-80 rounded-full bg-emerald-500/5 blur-[100px] pointer-events-none" />
+        
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-3xs font-semibold tracking-wider text-emerald-400 uppercase font-bold">{dict.trust.badge}</span>
+            <h2 className="text-3xl font-extrabold text-white mt-2">{dict.trust.title}</h2>
+            <p className="text-slate-400 text-sm mt-3">{dict.trust.desc}</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {trustItems.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <div 
+                  key={index} 
+                  className={`glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-emerald-500/20 transition-all ${
+                    index === trustItems.length - 1 ? 'sm:col-span-2 lg:col-span-2' : ''
+                  }`}
+                >
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 mb-4">
+                    <IconComponent className="h-5 w-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed font-normal">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Pricing Section */}
       <section id="pricing" className="py-20 border-t border-slate-900 bg-slate-950/50 relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-cyan-500/5 blur-[120px] pointer-events-none" />
 
@@ -267,7 +354,7 @@ export default async function Home() {
                   <span className="text-emerald-400 font-extrabold">Q:</span>
                   {item.q}
                 </h3>
-                <p className="text-xs text-slate-400 mt-2.5 leading-relaxed pl-5">
+                <p className="text-xs text-slate-400 mt-2.5 leading-relaxed pl-5 font-normal">
                   {item.a}
                 </p>
               </div>

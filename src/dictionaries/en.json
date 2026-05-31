@@ -5,7 +5,7 @@
     "faq": "FAQ",
     "bookmarks": "Bookmarks",
     "adminPanel": "Admin Panel",
-    "userDashboard": "User Dashboard",
+    "userDashboard": "Dashboard",
     "signOut": "Sign Out",
     "logIn": "Log In",
     "getStarted": "Get Started"
@@ -15,12 +15,43 @@
     "titlePart1": "Build Faster.",
     "titlePart2": "Launch Smarter.",
     "subtitle": "Premium website templates marketplace, admin dashboards, IoT monitoring, CRM, POS, and installable APKs. Skip the basic coding process and deploy your app today.",
-    "exploreBtn": "Explore Templates",
-    "pricingBtn": "View Pricing",
+    "exploreBtn": "Browse Templates",
+    "pricingBtn": "View Live Demo",
     "feature1": "Verified License Keys",
     "feature2": "Next.js App Router & Tailwind v4",
     "feature3": "Instant ZIP & APK Download",
-    "feature4": "Lifetime Code Updates"
+    "feature4": "Lifetime Code Updates",
+    "stats": {
+      "templatesCount": "10+ Premium",
+      "templatesLabel": "Templates Available",
+      "downloadsCount": "2,500+",
+      "downloadsLabel": "Downloads",
+      "clientsCount": "1,200+",
+      "clientsLabel": "Happy Clients",
+      "techsCount": "8+ Techs",
+      "techsLabel": "Technologies Supported"
+    }
+  },
+  "trust": {
+    "badge": "QUALITY ASSURANCE",
+    "title": "Why Newlera Stack?",
+    "desc": "Each digital product in our catalog is engineered to the highest specifications to accelerate your production cycle.",
+    "items": {
+      "ready_title": "Production Ready",
+      "ready_desc": "Source code is deployable straight to production server instances with zero setup hassle.",
+      "responsive_title": "Mobile Responsive",
+      "responsive_desc": "Flawless rendering and layouts across all viewport sizes, from phones to monitors.",
+      "clean_title": "Clean Architecture",
+      "clean_desc": "Neat, modern, and modular code structures that are a breeze to extend and customize.",
+      "seo_title": "SEO Optimized",
+      "seo_desc": "Fast page speeds, fully structured markup, and optimized metadata for search rankings.",
+      "docs_title": "Documentation Included",
+      "docs_desc": "Detailed instructions guiding local package installation and hosting server setup.",
+      "updates_title": "Lifetime Updates",
+      "updates_desc": "Download newer updates and fixes for free forever directly in your dashboard.",
+      "uiux_title": "Modern UI/UX",
+      "uiux_desc": "Premium aesthetics and animations matching Linear, Vercel, and Stripe design lines."
+    }
   },
   "trending": {
     "badge": "Top Choices",
@@ -47,7 +78,7 @@
       "title": "Developer Bundle",
       "desc": "Exclusive access to the entire catalog for developers & startups.",
       "payOnce": "/ pay once",
-      "feature1": "Free access to all templates (6+)",
+      "feature1": "Free access to all templates (10+)",
       "feature2": "Download ready-to-deploy APKs",
       "feature3": "Unlimited commercial project licenses",
       "feature4": "Free access to new templates",
@@ -64,18 +95,20 @@
     }
   },
   "faq": {
-    "badge": "Q&A",
+    "badge": "QUESTIONS & ANSWERS",
     "title": "Frequently Asked Questions",
-    "q1": "What do I get after purchasing?",
-    "a1": "You will get a ZIP archive containing the complete, structured source code (Next.js, TypeScript, Tailwind CSS), complete installation instructions, and a ready-to-use APK download link for relevant app categories. A unique license is also included in your dashboard.",
-    "q2": "Do these templates support Android / iOS (APK) installation?",
-    "a2": "Yes! Some of our templates (like POS, IoT dashboard, and Business apps) are configured using CapacitorJS/Cordova. You will get the web source code along with a starter-kit configuration to directly build the APK on your Android device.",
-    "q3": "How do I deploy the application?",
-    "a3": "Our web templates are 100% compatible with Vercel, Netlify, or conventional VPS. Our deployment instructions include steps for PostgreSQL database setup with Prisma ORM for secure production integration.",
-    "q4": "Do I get free updates?",
-    "a4": "Every license purchase includes lifetime free update access for that template. The changelog and latest download files will always be automatically updated in your Purchase Dashboard.",
-    "q5": "Can I get a refund?",
-    "a5": "Because our products are digital goods/source code that can be fully copied, we do not offer refunds once the files are downloaded. However, our support team is ready to help 24/7 if you experience technical issues."
+    "q1": "Do I get the full source code?",
+    "a1": "Yes, 100% complete. After a successful purchase, you will immediately get access to download the ZIP file containing all raw source code (Next.js, TypeScript, Tailwind CSS), database schema, and design assets without any restrictions.",
+    "q2": "Can I use these templates for client projects?",
+    "a2": "Absolutely. Our standard license permits you to use the templates to build commercial projects for yourself as well as for your clients.",
+    "q3": "Is there setup documentation?",
+    "a3": "Yes. Every template includes comprehensive local setup instructions. This includes packages installation steps, setting up environmental variables (.env), database migrations, and deployment guides.",
+    "q4": "Will I receive future updates?",
+    "a4": "Yes. Every license purchase includes lifetime free updates. Any new version (including bug fixes or framework upgrades) will be automatically available for download in your dashboard.",
+    "q5": "Is technical support included?",
+    "a5": "Yes. We offer 6 months of basic technical support to assist you with installation issues, setup configurations, or general questions about using the templates.",
+    "q6": "How do I download the product after purchasing?",
+    "a6": "The process is instant. As soon as your simulated sandbox payment is verified, your unique license key is generated, and the ZIP (and APK, if available) download buttons become active on both the product page and your account dashboard."
   },
   "testimonials": {
     "badge": "Testimonials",
@@ -134,13 +167,14 @@
     "adminConsole": "Admin Console",
     "signOut": "Sign Out",
     "tabs": {
-      "purchases": "Purchases & Downloads",
-      "bookmarks": "My Bookmarks",
-      "licenses": "License Manager",
+      "purchases": "Purchased Products",
+      "bookmarks": "Downloads",
+      "licenses": "Licenses",
+      "history": "Order History",
       "profile": "Profile Settings"
     },
     "purchases": {
-      "title": "Your Purchased Templates",
+      "title": "Your Purchased Products",
       "purchasedOn": "Purchased:",
       "price": "Price: $",
       "license": "License:",
@@ -150,21 +184,21 @@
       "browse": "Browse Catalog"
     },
     "bookmarks": {
-      "title": "Bookmarked Templates",
+      "title": "Downloads",
       "viewDetails": "View details",
-      "emptyTitle": "Your bookmarks folder is empty",
-      "emptyDesc": "Click the heart button on template cards to save them here for quick review."
+      "emptyTitle": "Your downloads folder is empty",
+      "emptyDesc": "ZIP and APK packages for products you have purchased will appear here."
     },
     "licenses": {
-      "title": "License Keys Audit",
+      "title": "User Licenses Manager",
       "desc": "Use these keys to register and whitelist your staging/production environments. License keys are tied to your personal email account.",
       "standard": "Commercial Standard License",
       "emptyTitle": "No active licenses found",
       "emptyDesc": "Active license signatures will display here immediately after checking out."
     },
     "profile": {
-      "title": "Edit Profile Settings",
-      "success": "Profile updated successfully! (Simulation)",
+      "title": "Profile Settings Settings",
+      "success": "Profile updated successfully!",
       "failed": "Failed to update profile",
       "nameLabel": "Full Name",
       "emailLabel": "Email Address",
@@ -222,26 +256,26 @@
     }
   },
   "templateDetails": {
-    "back": "Back to Template Catalog",
+    "back": "Back to Catalog",
     "sales": "sales",
-    "about": "About This Template",
+    "about": "About This Product",
     "tabs": {
-      "features": "Key Features",
+      "features": "Complete Features",
       "tech": "Tech Stack",
       "changelog": "Changelog"
     },
     "checkout": {
       "title": "Commercial Standard License",
       "desc": "Full access to source code and assets. Can be used for personal or commercial projects.",
-      "liveDemo": "View Live Demo",
+      "liveDemo": "Live Demo",
       "includes": "What's included:",
-      "inc1": "Complete Next.js Source Code",
-      "inc2": "Figma Design Files",
-      "inc3": "6 Months Premium Support",
+      "inc1": "Complete Source Code",
+      "inc2": "Premium Design Assets",
+      "inc3": "6 Months Technical Support",
       "inc4": "Lifetime Updates",
-      "buy": "Buy Template Now",
+      "buy": "Buy Now",
       "processing": "Processing...",
-      "purchased": "License Purchased",
+      "purchased": "Active License",
       "goDashboard": "Go to Dashboard",
       "loginToBuy": "Login to Buy",
       "oneTime": "One-time payment",
@@ -268,9 +302,9 @@
     "badge": "Premium Catalog",
     "title": "Explore Ready-to-Install Templates",
     "subtitle": "Fast, responsive, and completely documented source code templates. Save hundreds of hours of coding.",
-    "searchPlaceholder": "Search features, stacks, etc...",
-    "noResults": "No templates found",
-    "noResultsDesc": "We couldn't find any template matching your query. Try adjusting your keywords or category filters."
+    "searchPlaceholder": "Search products, categories, tech stack, or tags...",
+    "noResults": "No products found",
+    "noResultsDesc": "We couldn't find any products matching your query. Try adjusting your keywords or filters."
   },
   "card": {
     "licensePrice": "License Price",
@@ -292,7 +326,7 @@
   },
   "footer": {
     "desc": "Build Faster. Launch Smarter. Premium website templates and installable business APKs built for modern developers and agencies.",
-    "links1": "Templates",
+    "links1": "Products",
     "l1_1": "Admin Dashboards",
     "l1_2": "E-Commerce Shops",
     "l1_3": "CRM & POS Systems",
@@ -302,10 +336,10 @@
     "l2_2": "Pricing Plans",
     "l2_3": "Developer License",
     "l2_4": "APK Setup Guide",
-    "links3": "Legal",
+    "links3": "Support & Legal",
     "l3_1": "Terms of Service",
     "l3_2": "Privacy Policy",
-    "l3_3": "Refund Agreement",
+    "l3_3": "License Agreement",
     "copyright": "Newlera Stack. All rights reserved. Built with Next.js, Tailwind v4 and TypeScript.",
     "status": "All Systems Operational"
   }
