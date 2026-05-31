@@ -1,0 +1,312 @@
+{
+  "nav": {
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "bookmarks": "Bookmarks",
+    "adminPanel": "Admin Panel",
+    "userDashboard": "User Dashboard",
+    "signOut": "Keluar",
+    "logIn": "Masuk",
+    "getStarted": "Mulai"
+  },
+  "hero": {
+    "badge": "Launch Faster. Code Smarter.",
+    "titlePart1": "Build Faster.",
+    "titlePart2": "Launch Smarter.",
+    "subtitle": "Marketplace template website premium, dashboard admin, IoT monitoring, CRM, POS, dan APK siap install. Lewati proses koding dasar dan deploy aplikasi Anda hari ini.",
+    "exploreBtn": "Explore Templates",
+    "pricingBtn": "View Pricing",
+    "feature1": "Verified License Keys",
+    "feature2": "Next.js App Router & Tailwind v4",
+    "feature3": "Instant ZIP & APK Download",
+    "feature4": "Lifetime Code Updates"
+  },
+  "trending": {
+    "badge": "Top Choices",
+    "title": "Trending This Week",
+    "viewAll": "View all templates"
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Transparent, Developer-first Pricing",
+    "subtitle": "Pilih lisensi sesuai kebutuhan proyek Anda. Tidak ada biaya langganan bulanan.",
+    "single": {
+      "title": "Single Template",
+      "desc": "Untuk satu proyek personal atau komersial.",
+      "startAt": "Mulai",
+      "perTemplate": "/ template",
+      "feature1": "Akses penuh kode sumber ZIP",
+      "feature2": "Starter APK (jika tersedia)",
+      "feature3": "Pembaruan gratis seumur hidup",
+      "feature4": "Akses seluruh katalog template",
+      "btn": "Pilih Template"
+    },
+    "bundle": {
+      "bestValue": "Best Value",
+      "title": "Developer Bundle",
+      "desc": "Akses eksklusif seluruh katalog untuk developer & startup.",
+      "payOnce": "/ bayar sekali",
+      "feature1": "Bebas akses seluruh template (6+)",
+      "feature2": "Unduh APK siap deploy",
+      "feature3": "Lisensi komersial proyek tak terbatas",
+      "feature4": "Akses template baru gratis",
+      "btn": "Beli Bundle Sekarang"
+    },
+    "agency": {
+      "title": "Agency Premium",
+      "desc": "Untuk software house dan agensi korporasi.",
+      "feature1": "Seluruh benefit Developer Bundle",
+      "feature2": "Prioritas support teknis (Slack/Discord)",
+      "feature3": "Hak cipta Whitelabel untuk klien",
+      "feature4": "Free custom modifikasi minor",
+      "btn": "Hubungi Kami"
+    }
+  },
+  "faq": {
+    "badge": "Q&A",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "q1": "Apa saja yang didapatkan setelah melakukan pembelian?",
+    "a1": "Anda akan mendapatkan arsip ZIP berisi file kode sumber lengkap (Next.js, TypeScript, Tailwind CSS) yang terstruktur, petunjuk instalasi lengkap, dan link unduhan APK siap pakai untuk kategori aplikasi yang relevan. Lisensi unik juga disertakan di dashboard Anda.",
+    "q2": "Apakah template ini mendukung instalasi di Android / iOS (APK)?",
+    "a2": "Ya! Beberapa template kami (seperti POS, IoT dashboard, dan Business apps) telah dikonfigurasi menggunakan CapacitorJS/Cordova. Anda akan mendapatkan kode sumber web beserta starter-kit konfigurasi untuk langsung melakukan build APK di perangkat Android Anda.",
+    "q3": "Bagaimana cara melakukan deployment aplikasi?",
+    "a3": "Template web kami 100% kompatibel dengan Vercel, Netlify, atau VPS konvensional. Petunjuk deployment kami mencakup langkah-langkah setup database PostgreSQL dengan Prisma ORM untuk integrasi production yang aman.",
+    "q4": "Apakah saya mendapatkan pembaruan (updates) gratis?",
+    "a4": "Setiap pembelian lisensi menyertakan akses pembaruan gratis seumur hidup untuk template tersebut. Changelog dan file unduhan terbaru akan selalu diperbarui secara otomatis di Dashboard Pembelian Anda.",
+    "q5": "Apakah saya bisa mendapatkan pengembalian dana (refund)?",
+    "a5": "Karena produk kami berupa barang digital/kode sumber yang dapat disalin sepenuhnya, kami tidak menawarkan pengembalian dana setelah file diunduh. Namun, tim support kami siap membantu 24/7 jika Anda mengalami kendala teknis."
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Dukungan Komunitas Developer",
+    "t1": "Newlera Stack memangkas waktu build dashboard POS kami hingga 60%. Konfigurasi Tailwind v4 dan Prisma di dalamnya sangat bersih dan siap produksi. Sangat direkomendasikan!",
+    "t2": "IoT dashboard template-nya berjalan sangat responsif dan APK-nya langsung siap dicoba di monitor industrial kami. Estetikanya mewah, bukan desain template biasa.",
+    "t3": "JWT auth dan modul user profile-nya sangat mudah dimodifikasi. Live demo sangat akurat dan dokumentasi kodenya terstruktur dengan baik."
+  },
+  "cta": {
+    "title": "Siap Meluncurkan Proyek Bisnis Anda?",
+    "desc": "Dapatkan akses instan ke seluruh template premium web & mobile APK. Mulai kembangkan aplikasi dashboard, CRM, POS, dan landing page modern tanpa batas.",
+    "btn": "Pilih Template Sekarang"
+  },
+  "auth": {
+    "login": {
+      "title": "Selamat Datang",
+      "subtitle": "Masuk untuk mengakses template dan lisensi yang Anda beli.",
+      "emailLabel": "Alamat Email",
+      "emailPlaceholder": "nama@contoh.com",
+      "passwordLabel": "Kata Sandi",
+      "forgotPassword": "Lupa Kata Sandi?",
+      "passwordPlaceholder": "••••••••",
+      "btn": "Masuk",
+      "btnLoading": "Masuk...",
+      "demoTitle": "💡 Akun Demo Cepat:",
+      "noAccount": "Belum punya akun?",
+      "createAccount": "Buat akun",
+      "fillFields": "Harap isi semua kolom",
+      "invalid": "Kredensial tidak valid",
+      "error": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi."
+    },
+    "register": {
+      "title": "Buat Akun",
+      "subtitle": "Daftar untuk membeli template premium dan mengunduhnya secara instan.",
+      "nameLabel": "Nama Lengkap",
+      "namePlaceholder": "Budi Santoso",
+      "emailLabel": "Alamat Email",
+      "passwordLabel": "Kata Sandi",
+      "passwordPlaceholder": "Min. 6 karakter",
+      "confirmPasswordLabel": "Konfirmasi Kata Sandi",
+      "confirmPasswordPlaceholder": "Ulangi kata sandi",
+      "btn": "Buat Akun",
+      "btnLoading": "Mendaftar...",
+      "hasAccount": "Sudah punya akun?",
+      "signIn": "Masuk",
+      "fillFields": "Harap isi semua kolom",
+      "passLength": "Kata sandi minimal harus 6 karakter",
+      "passMatch": "Kata sandi tidak cocok",
+      "failed": "Pendaftaran gagal",
+      "error": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi."
+    }
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "memberSince": "Anggota sejak",
+    "adminConsole": "Konsol Admin",
+    "signOut": "Keluar",
+    "tabs": {
+      "purchases": "Pembelian & Unduhan",
+      "bookmarks": "Markah Saya",
+      "licenses": "Manajer Lisensi",
+      "profile": "Pengaturan Profil"
+    },
+    "purchases": {
+      "title": "Template yang Anda Beli",
+      "purchasedOn": "Dibeli pada:",
+      "price": "Harga: $",
+      "license": "Lisensi:",
+      "downloadZip": "Unduh ZIP",
+      "emptyTitle": "Belum ada template yang dibeli",
+      "emptyDesc": "Jelajahi marketplace kami untuk membeli template responsif premium dan starter APK.",
+      "browse": "Jelajahi Katalog"
+    },
+    "bookmarks": {
+      "title": "Template Disimpan",
+      "viewDetails": "Lihat detail",
+      "emptyTitle": "Folder markah Anda kosong",
+      "emptyDesc": "Klik tombol hati pada kartu template untuk menyimpannya di sini agar mudah dilihat kembali."
+    },
+    "licenses": {
+      "title": "Audit Kunci Lisensi",
+      "desc": "Gunakan kunci ini untuk mendaftarkan dan memasukkan lingkungan staging/produksi Anda ke daftar putih (whitelist). Kunci lisensi terikat pada akun email pribadi Anda.",
+      "standard": "Lisensi Standar Komersial",
+      "emptyTitle": "Tidak ada lisensi aktif ditemukan",
+      "emptyDesc": "Tanda tangan lisensi aktif akan ditampilkan di sini segera setelah pembayaran selesai."
+    },
+    "profile": {
+      "title": "Edit Pengaturan Profil",
+      "success": "Profil berhasil diperbarui! (Simulasi)",
+      "failed": "Gagal memperbarui profil",
+      "nameLabel": "Nama Lengkap",
+      "emailLabel": "Alamat Email",
+      "emailTip": "Hubungi dukungan jika Anda perlu mengubah alamat email yang terdaftar.",
+      "passLabel": "Kata Sandi Baru (Opsional)",
+      "btn": "Simpan Perubahan",
+      "btnLoading": "Menyimpan..."
+    }
+  },
+  "admin": {
+    "title": "Panel Manajemen Admin",
+    "subtitle": "Administrasi Keamanan",
+    "desc": "Unggah template, audit pendaftaran lisensi pengguna, dan lihat analitik.",
+    "addTemplate": "Tambah Template",
+    "goToDashboard": "Ke Dasbor Pengguna",
+    "tabs": {
+      "overview": "Ringkasan Analitik",
+      "templates": "Kelola Template",
+      "users": "Kelola Pengguna",
+      "licenses": "Manajer Lisensi"
+    },
+    "overview": {
+      "revenue": "Total Pendapatan",
+      "sales": "Jumlah Penjualan",
+      "downloads": "Unduhan Template",
+      "visitors": "Pengunjung Platform",
+      "chartTitle": "Simulasi Pertumbuhan Penjualan & Pendapatan Bulanan",
+      "tableTitle": "Log Transaksi Terbaru",
+      "emptyTx": "Belum ada transaksi tercatat."
+    },
+    "templates": {
+      "title": "Inventaris Template",
+      "col1": "Judul / Kategori",
+      "col2": "Harga",
+      "col3": "Penjualan",
+      "col4": "Aksi"
+    },
+    "users": {
+      "title": "Registri Akun Pengguna",
+      "col1": "Nama / Email",
+      "col2": "Bergabung",
+      "col3": "Peran",
+      "col4": "Ubah Peran Akses",
+      "makeAdmin": "Jadikan Admin",
+      "makeUser": "Jadikan Pengguna"
+    },
+    "licenses": {
+      "title": "Auditor Lisensi Aktif",
+      "col1": "Kunci Lisensi",
+      "col2": "Tanggal Dibuat",
+      "col3": "Status",
+      "col4": "Ubah Pencabutan",
+      "revoke": "Cabut Kunci",
+      "activate": "Aktifkan Kunci"
+    }
+  },
+  "templateDetails": {
+    "back": "Kembali ke Katalog Template",
+    "sales": "penjualan",
+    "about": "Tentang Template Ini",
+    "tabs": {
+      "features": "Fitur Utama",
+      "tech": "Stack Teknologi",
+      "changelog": "Catatan Perubahan"
+    },
+    "checkout": {
+      "title": "Lisensi Standar Komersial",
+      "desc": "Akses penuh ke kode sumber dan aset. Dapat digunakan untuk proyek pribadi atau komersial.",
+      "liveDemo": "Lihat Demo Langsung",
+      "includes": "Yang termasuk di dalamnya:",
+      "inc1": "Kode Sumber Next.js Lengkap",
+      "inc2": "File Desain Figma",
+      "inc3": "6 Bulan Dukungan Premium",
+      "inc4": "Pembaruan Seumur Hidup",
+      "buy": "Beli Template Sekarang",
+      "processing": "Memproses...",
+      "purchased": "Lisensi Telah Dibeli",
+      "goDashboard": "Ke Dasbor",
+      "loginToBuy": "Masuk untuk Membeli",
+      "oneTime": "Pembayaran sekali saja",
+      "downloadZip": "Unduh Kode Sumber (ZIP)",
+      "downloadApk": "Unduh APK Siap Install",
+      "secureCheckout": "Pembayaran aman terenkripsi SSL 256-bit",
+      "instantDelivery": "Pengiriman instan Kunci Lisensi unik",
+      "licenseKeyLabel": "Kunci Lisensi Anda",
+      "active": "Aktif",
+      "licenseType": "Tipe Lisensi:",
+      "singleDev": "Developer Tunggal",
+      "templateLabel": "Template:",
+      "totalPrice": "Total Harga:",
+      "simulatorMode": "Mode Simulator:",
+      "simulatorDesc": "Marketplace ini menggunakan sandbox pembayaran interaktif. Klik tombol di bawah untuk mensimulasikan transaksi bank yang langsung berhasil, yang mencatat pembelian di database dan memperbarui lisensi Anda.",
+      "simulateBtn": "Simulasikan Pembayaran Aman",
+      "processingDesc": "Menghubungkan dengan gerbang bank dan menghasilkan tanda tangan lisensi unik Anda. Harap jangan tutup jendela ini.",
+      "successDesc": "Terima kasih! Pembayaran Anda telah diverifikasi. File template kini tersedia untuk diunduh.",
+      "uniqueLicenseKey": "Kunci Lisensi Unik Anda",
+      "downloadZipShort": "Unduh ZIP"
+    }
+  },
+  "explorer": {
+    "badge": "Katalog Premium",
+    "title": "Jelajahi Template Siap Install",
+    "subtitle": "Template kode sumber yang cepat, responsif, dan terdokumentasi lengkap. Hemat ratusan jam coding.",
+    "searchPlaceholder": "Cari fitur, stack, dll...",
+    "noResults": "Template tidak ditemukan",
+    "noResultsDesc": "Kami tidak dapat menemukan template yang sesuai dengan pencarian Anda. Coba ubah kata kunci atau filter kategori."
+  },
+  "card": {
+    "licensePrice": "Harga Lisensi",
+    "details": "Detail",
+    "more": "lainnya",
+    "loginBookmark": "Silakan login untuk menyimpan template"
+  },
+  "tabs": {
+    "features": "Daftar Fitur",
+    "tech": "Stack Teknologi",
+    "changelog": "Catatan Perubahan",
+    "docs": "Dokumentasi Instalasi",
+    "featuresTitle": "Fitur Utama & Keunggulan",
+    "techTitle": "Stack Teknologi Terkonfigurasi",
+    "techDesc": "Proyek ini telah sepenuhnya dikonfigurasi, dioptimalkan, dan siap deploy dengan tools ekosistem berikut:",
+    "docsTitle": "Panduan Memulai",
+    "docsDesc": "Untuk menjalankan template proyek ini secara lokal, ikuti langkah-langkah standar berikut:",
+    "docsNote": "* Detail tentang membangun template APK Android terdokumentasi di file README.md di dalam paket template."
+  },
+  "footer": {
+    "desc": "Build Faster. Launch Smarter. Template website premium dan APK bisnis siap install yang dibangun untuk developer dan agensi modern.",
+    "links1": "Template",
+    "l1_1": "Dashboard Admin",
+    "l1_2": "Toko E-Commerce",
+    "l1_3": "Sistem CRM & POS",
+    "l1_4": "Panel IoT & APK",
+    "links2": "Sumber Daya",
+    "l2_1": "Pusat Bantuan FAQ",
+    "l2_2": "Paket Harga",
+    "l2_3": "Lisensi Developer",
+    "l2_4": "Panduan Setup APK",
+    "links3": "Legal",
+    "l3_1": "Ketentuan Layanan",
+    "l3_2": "Kebijakan Privasi",
+    "l3_3": "Perjanjian Pengembalian Dana",
+    "copyright": "Newlera Stack. Hak cipta dilindungi. Dibangun dengan Next.js, Tailwind v4 dan TypeScript.",
+    "status": "Semua Sistem Operasional"
+  }
+}

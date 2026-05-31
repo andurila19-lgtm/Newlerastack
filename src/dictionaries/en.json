@@ -1,0 +1,312 @@
+{
+  "nav": {
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "bookmarks": "Bookmarks",
+    "adminPanel": "Admin Panel",
+    "userDashboard": "User Dashboard",
+    "signOut": "Sign Out",
+    "logIn": "Log In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "Launch Faster. Code Smarter.",
+    "titlePart1": "Build Faster.",
+    "titlePart2": "Launch Smarter.",
+    "subtitle": "Premium website templates marketplace, admin dashboards, IoT monitoring, CRM, POS, and installable APKs. Skip the basic coding process and deploy your app today.",
+    "exploreBtn": "Explore Templates",
+    "pricingBtn": "View Pricing",
+    "feature1": "Verified License Keys",
+    "feature2": "Next.js App Router & Tailwind v4",
+    "feature3": "Instant ZIP & APK Download",
+    "feature4": "Lifetime Code Updates"
+  },
+  "trending": {
+    "badge": "Top Choices",
+    "title": "Trending This Week",
+    "viewAll": "View all templates"
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Transparent, Developer-first Pricing",
+    "subtitle": "Choose the license that fits your project needs. No monthly subscription fees.",
+    "single": {
+      "title": "Single Template",
+      "desc": "For one personal or commercial project.",
+      "startAt": "Start at",
+      "perTemplate": "/ template",
+      "feature1": "Full ZIP source code access",
+      "feature2": "Starter APK (if available)",
+      "feature3": "Lifetime free updates",
+      "feature4": "Access to entire template catalog",
+      "btn": "Choose Template"
+    },
+    "bundle": {
+      "bestValue": "Best Value",
+      "title": "Developer Bundle",
+      "desc": "Exclusive access to the entire catalog for developers & startups.",
+      "payOnce": "/ pay once",
+      "feature1": "Free access to all templates (6+)",
+      "feature2": "Download ready-to-deploy APKs",
+      "feature3": "Unlimited commercial project licenses",
+      "feature4": "Free access to new templates",
+      "btn": "Buy Bundle Now"
+    },
+    "agency": {
+      "title": "Agency Premium",
+      "desc": "For software houses and corporate agencies.",
+      "feature1": "All Developer Bundle benefits",
+      "feature2": "Priority technical support (Slack/Discord)",
+      "feature3": "Whitelabel copyright for clients",
+      "feature4": "Free minor custom modifications",
+      "btn": "Contact Us"
+    }
+  },
+  "faq": {
+    "badge": "Q&A",
+    "title": "Frequently Asked Questions",
+    "q1": "What do I get after purchasing?",
+    "a1": "You will get a ZIP archive containing the complete, structured source code (Next.js, TypeScript, Tailwind CSS), complete installation instructions, and a ready-to-use APK download link for relevant app categories. A unique license is also included in your dashboard.",
+    "q2": "Do these templates support Android / iOS (APK) installation?",
+    "a2": "Yes! Some of our templates (like POS, IoT dashboard, and Business apps) are configured using CapacitorJS/Cordova. You will get the web source code along with a starter-kit configuration to directly build the APK on your Android device.",
+    "q3": "How do I deploy the application?",
+    "a3": "Our web templates are 100% compatible with Vercel, Netlify, or conventional VPS. Our deployment instructions include steps for PostgreSQL database setup with Prisma ORM for secure production integration.",
+    "q4": "Do I get free updates?",
+    "a4": "Every license purchase includes lifetime free update access for that template. The changelog and latest download files will always be automatically updated in your Purchase Dashboard.",
+    "q5": "Can I get a refund?",
+    "a5": "Because our products are digital goods/source code that can be fully copied, we do not offer refunds once the files are downloaded. However, our support team is ready to help 24/7 if you experience technical issues."
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Developer Community Support",
+    "t1": "Newlera Stack cut our POS dashboard build time by 60%. The Tailwind v4 and Prisma configuration inside is very clean and production-ready. Highly recommended!",
+    "t2": "The IoT dashboard template is highly responsive and the APK is instantly ready to test on our industrial monitors. The aesthetics are luxurious, not your average template design.",
+    "t3": "The JWT auth and user profile modules are very easy to modify. The live demo is highly accurate and the code documentation is well structured."
+  },
+  "cta": {
+    "title": "Ready to Launch Your Business Project?",
+    "desc": "Get instant access to all premium web & mobile APK templates. Start building modern dashboards, CRM, POS, and landing pages without limits.",
+    "btn": "Choose a Template Now"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to access your purchased templates and licenses.",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "name@example.com",
+      "passwordLabel": "Password",
+      "forgotPassword": "Forgot Password?",
+      "passwordPlaceholder": "••••••••",
+      "btn": "Sign In",
+      "btnLoading": "Signing in...",
+      "demoTitle": "💡 Quick Demo Accounts:",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create account",
+      "fillFields": "Please fill in all fields",
+      "invalid": "Invalid credentials",
+      "error": "An unexpected error occurred. Please try again."
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Sign up to buy premium templates and download them instantly.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Min. 6 characters",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Repeat password",
+      "btn": "Create Account",
+      "btnLoading": "Registering...",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "fillFields": "Please fill in all fields",
+      "passLength": "Password must be at least 6 characters long",
+      "passMatch": "Passwords do not match",
+      "failed": "Registration failed",
+      "error": "An unexpected error occurred. Please try again."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "memberSince": "Member since",
+    "adminConsole": "Admin Console",
+    "signOut": "Sign Out",
+    "tabs": {
+      "purchases": "Purchases & Downloads",
+      "bookmarks": "My Bookmarks",
+      "licenses": "License Manager",
+      "profile": "Profile Settings"
+    },
+    "purchases": {
+      "title": "Your Purchased Templates",
+      "purchasedOn": "Purchased:",
+      "price": "Price: $",
+      "license": "License:",
+      "downloadZip": "Download ZIP",
+      "emptyTitle": "No templates purchased yet",
+      "emptyDesc": "Explore our marketplace to buy premium responsive templates and APK starters.",
+      "browse": "Browse Catalog"
+    },
+    "bookmarks": {
+      "title": "Bookmarked Templates",
+      "viewDetails": "View details",
+      "emptyTitle": "Your bookmarks folder is empty",
+      "emptyDesc": "Click the heart button on template cards to save them here for quick review."
+    },
+    "licenses": {
+      "title": "License Keys Audit",
+      "desc": "Use these keys to register and whitelist your staging/production environments. License keys are tied to your personal email account.",
+      "standard": "Commercial Standard License",
+      "emptyTitle": "No active licenses found",
+      "emptyDesc": "Active license signatures will display here immediately after checking out."
+    },
+    "profile": {
+      "title": "Edit Profile Settings",
+      "success": "Profile updated successfully! (Simulation)",
+      "failed": "Failed to update profile",
+      "nameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "emailTip": "Contact support if you need to alter your registered email address.",
+      "passLabel": "New Password (Optional)",
+      "btn": "Save Changes",
+      "btnLoading": "Saving..."
+    }
+  },
+  "admin": {
+    "title": "Admin Management Panel",
+    "subtitle": "Security Administration",
+    "desc": "Upload templates, audit user license registrations, and view analytics.",
+    "addTemplate": "Add Template",
+    "goToDashboard": "Go to User Dashboard",
+    "tabs": {
+      "overview": "Analytics Overview",
+      "templates": "Manage Templates",
+      "users": "Manage Users",
+      "licenses": "Licenses Manager"
+    },
+    "overview": {
+      "revenue": "Total Revenue",
+      "sales": "Sales Count",
+      "downloads": "Template Downloads",
+      "visitors": "Platform Visitors",
+      "chartTitle": "Simulated Monthly Sales & Revenue Growth",
+      "tableTitle": "Recent Transactions Log",
+      "emptyTx": "No transactions recorded yet."
+    },
+    "templates": {
+      "title": "Templates Inventory",
+      "col1": "Title / Category",
+      "col2": "Price",
+      "col3": "Sales",
+      "col4": "Actions"
+    },
+    "users": {
+      "title": "User Accounts Registry",
+      "col1": "Name / Email",
+      "col2": "Joined",
+      "col3": "Role",
+      "col4": "Access Role Toggle",
+      "makeAdmin": "Make Admin",
+      "makeUser": "Make User"
+    },
+    "licenses": {
+      "title": "Active Licenses Auditor",
+      "col1": "License Key",
+      "col2": "Date Generated",
+      "col3": "Status",
+      "col4": "Toggle Revocation",
+      "revoke": "Revoke Key",
+      "activate": "Activate Key"
+    }
+  },
+  "templateDetails": {
+    "back": "Back to Template Catalog",
+    "sales": "sales",
+    "about": "About This Template",
+    "tabs": {
+      "features": "Key Features",
+      "tech": "Tech Stack",
+      "changelog": "Changelog"
+    },
+    "checkout": {
+      "title": "Commercial Standard License",
+      "desc": "Full access to source code and assets. Can be used for personal or commercial projects.",
+      "liveDemo": "View Live Demo",
+      "includes": "What's included:",
+      "inc1": "Complete Next.js Source Code",
+      "inc2": "Figma Design Files",
+      "inc3": "6 Months Premium Support",
+      "inc4": "Lifetime Updates",
+      "buy": "Buy Template Now",
+      "processing": "Processing...",
+      "purchased": "License Purchased",
+      "goDashboard": "Go to Dashboard",
+      "loginToBuy": "Login to Buy",
+      "oneTime": "One-time payment",
+      "downloadZip": "Download Source Code (ZIP)",
+      "downloadApk": "Download Installable APK",
+      "secureCheckout": "Secure 256-bit SSL encrypted checkout",
+      "instantDelivery": "Instant delivery of unique License Key",
+      "licenseKeyLabel": "Your License Key",
+      "active": "Active",
+      "licenseType": "License Type:",
+      "singleDev": "Single Developer",
+      "templateLabel": "Template:",
+      "totalPrice": "Total Price:",
+      "simulatorMode": "Simulator Mode:",
+      "simulatorDesc": "This marketplace uses an interactive payment sandbox. Click the button below to simulate an instantaneous successful bank transaction, which logs the purchase in the database and updates your licenses.",
+      "simulateBtn": "Simulate Safe Payment",
+      "processingDesc": "Connecting with the bank gateway and generating your unique licensing signature. Please do not close this window.",
+      "successDesc": "Thank you! Your payment was verified. The template files are now available for download.",
+      "uniqueLicenseKey": "Your Unique License Key",
+      "downloadZipShort": "Download ZIP"
+    }
+  },
+  "explorer": {
+    "badge": "Premium Catalog",
+    "title": "Explore Ready-to-Install Templates",
+    "subtitle": "Fast, responsive, and completely documented source code templates. Save hundreds of hours of coding.",
+    "searchPlaceholder": "Search features, stacks, etc...",
+    "noResults": "No templates found",
+    "noResultsDesc": "We couldn't find any template matching your query. Try adjusting your keywords or category filters."
+  },
+  "card": {
+    "licensePrice": "License Price",
+    "details": "Details",
+    "more": "more",
+    "loginBookmark": "Please login to bookmark templates"
+  },
+  "tabs": {
+    "features": "Features List",
+    "tech": "Tech Stack",
+    "changelog": "Changelog",
+    "docs": "Installation Docs",
+    "featuresTitle": "Key Highlights & Features",
+    "techTitle": "Configured Technology Stack",
+    "techDesc": "The project is fully pre-configured, optimized, and ready to deploy with the following ecosystem tools:",
+    "docsTitle": "Getting Started Guide",
+    "docsDesc": "To launch this project template locally, follow these standard steps:",
+    "docsNote": "* Details on building Android APK templates are documented in the README.md file inside the template package."
+  },
+  "footer": {
+    "desc": "Build Faster. Launch Smarter. Premium website templates and installable business APKs built for modern developers and agencies.",
+    "links1": "Templates",
+    "l1_1": "Admin Dashboards",
+    "l1_2": "E-Commerce Shops",
+    "l1_3": "CRM & POS Systems",
+    "l1_4": "IoT Panels & APKs",
+    "links2": "Resources",
+    "l2_1": "FAQ Help Desk",
+    "l2_2": "Pricing Plans",
+    "l2_3": "Developer License",
+    "l2_4": "APK Setup Guide",
+    "links3": "Legal",
+    "l3_1": "Terms of Service",
+    "l3_2": "Privacy Policy",
+    "l3_3": "Refund Agreement",
+    "copyright": "Newlera Stack. All rights reserved. Built with Next.js, Tailwind v4 and TypeScript.",
+    "status": "All Systems Operational"
+  }
+}

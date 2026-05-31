@@ -1,0 +1,85 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  name         String?
+  passwordHash String
+  role         String     @default("USER") // "USER" or "ADMIN"
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  purchases    Purchase[]
+  bookmarks    Bookmark[]
+}
+
+model Template {
+  id           String     @id @default(uuid())
+  title        String
+  slug         String     @unique
+  description  String
+  price        Float
+  category     String     // e.g. "Admin Dashboard", "E-commerce", "CRM / POS", "IoT / Monitoring", "Company Profile"
+  screenshots  Json       // Array of strings (image URLs)
+  features     Json       // Array of strings
+  techStack    Json       // Array of strings (e.g. ["Next.js", "React", "Tailwind CSS"])
+  changelog    Json       // Array of objects { version: string, date: string, changes: string[] }
+  videoUrl     String?
+  liveDemoUrl  String?
+  downloadUrl  String     // Simulated download URL or key
+  isTrending   Boolean    @default(false)
+  isNew        Boolean    @default(true)
+  salesCount   Int        @default(0)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  purchases    Purchase[]
+  bookmarks    Bookmark[]
+}
+
+model Purchase {
+  id           String     @id @default(uuid())
+  userId       String
+  templateId   String
+  amount       Float
+  status       String     @default("COMPLETED") // "COMPLETED", "FAILED"
+  licenseKey   String     @unique
+  purchaseDate DateTime   @default(now())
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  template     Template   @relation(fields: [templateId], references: [id], onDelete: Cascade)
+}
+
+model Bookmark {
+  id           String     @id @default(uuid())
+  userId       String
+  templateId   String
+  createdAt    DateTime   @default(now())
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  template     Template   @relation(fields: [templateId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, templateId])
+}
+
+model License {
+  id           String     @id @default(uuid())
+  licenseKey   String     @unique
+  purchaseId   String?
+  status       String     @default("ACTIVE") // "ACTIVE", "REVOKED"
+  createdAt    DateTime   @default(now())
+}
+
+model Analytics {
+  id           String     @id @default(uuid())
+  date         DateTime   @unique @default(now())
+  revenue      Float      @default(0.0)
+  salesCount   Int        @default(0)
+  downloads    Int        @default(0)
+  visitors     Int        @default(0)
+}
